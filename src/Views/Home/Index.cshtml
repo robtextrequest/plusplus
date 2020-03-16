@@ -1,0 +1,12 @@
+﻿@model PlusPlus.Models.IncrementViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>@Html.DisplayFor(m => m.NumberOfTimesClicked)</p>
+        <form asp-action="Increment">
+            <input type="Submit" value="Increment!" />
+        </form>
+    </div>
